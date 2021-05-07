@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>FlashEdit</title>
+</head>
+<body>
+    <div class="editor_space">
+        <div class="title_space">
+            <h1 id="title_element">Bienvenue sur FlashEdit</h1>
+        </div>
+        <div class="btn_up_rem">
+            <div class="act_upload">
+                <label for="upload_file">
+                    <a id="upload_file_element"><i class="fa fa-picture-o fa-2x up_icon" id="icon_up_element" aria-hidden="true"></i></a>
+                </label>
+                <input type="file" name="upload" id="upload_file" accept="image/*">
+            </div>
+            <button class="act_file" id="remove_file" disabled><i class="fa fa-ban fa-2x" aria-hidden="true"></i></button>
+            <button class="act_file" id="download_file" disabled><i class="fa fa-download fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <canvas id="editor_upload"></canvas>
+        <div class="filters_catalogue">
+            <div class="filters_first_series">
+                <button class="filter_action" id="blur_effect" disabled>Effet de flou</button>
+                <button class="filter_action" id="mosaic_effect" disabled>Mosaïque</button>
+                <button class="filter_action" id="black_and_white_effect" disabled>Effet Noir et Blanc</button>
+                <button class="filter_action" id="image_grain_effect" disabled>Effet de grain</button>
+            </div>
+            <div class="filters_second_series">
+                <button class="filter_action" id="vintage_effect" disabled>Effet vintage</button>
+                <button class="filter_action" id="negative_effect" disabled>Effet négatif</button>
+                <button class="filter_action" id="pencil_effect" disabled>Dessin sur papier</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_page_element">
+        <footer id="bottom_page_credits">
+            <p>Jean-Baptiste DAULAUS - 2021</p>
+        </footer>
+    </div>
+</body>
+</html>
